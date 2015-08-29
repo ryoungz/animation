@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>An Interesting Title Here</title>
+
+	<style>
+		body {
+			background-color: #FFF;
+			margin: 30px;
+			margin-top: 10px;
+		}
+
+		#box {
+			width: 350px;
+			height: 350px;
+			border: 5px solid black;
+			overflow: hidden;
+			background-color: #F2F2F2;
+		}
+
+		#box img {
+			transition: transform .5s ease-in;
+			transform: translate3d(0, -350px, 0);
+		}
+
+		#box img:hover {
+			transform: translate3d(0, 0px, 0);
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<img src="http://www.kirupa.com/images/html5_slider.png" height="700" alt="">
+	</div>
+
+	<script src="http://www.kirupa.com/prefixfree.min.js"></script>
+</body>
+</html>
